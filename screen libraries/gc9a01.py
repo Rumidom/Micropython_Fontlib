@@ -103,15 +103,15 @@ ROTATIONS = [
     0xa8]   # 7 - INVERTED_LANDSCAPE_MIRRORED]
 
 
-def color565(red, green=0, blue=0):
+def color565(green, blue=0,red=0):
     """
     Convert red, green and blue values (0-255) into a 16-bit 565 encoded color.
     """
     try:
-        red, green, blue = red  # see if the first var is a tuple/list
+        green, blue ,red  = green  # see if the first var is a tuple/list
     except TypeError:
         pass
-    return (red & 0xf8) << 8 | (green & 0xfc) << 3 | blue >> 3
+    return (blue & 0xf8) << 8 | (red & 0xfc) << 3 | green >> 3
 
 
 def _encode_pos(x, y):

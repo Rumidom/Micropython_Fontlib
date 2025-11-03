@@ -20,7 +20,7 @@ def getbitmap(path):
     filezise =  int.from_bytes(filebytes[2:6],"little")
     dataOffset = int.from_bytes(filebytes[10:14],"little")
     fmat = int.from_bytes(filebytes[28:30],"little")
-    pallet = [0,1][b'\x00\x00\x00\xff\xff\xff\xff\xff' == filebytes[54:62]]
+    pallet = [0,1][b'\x00\x00\x00\x00\xff\xff\xff\xff' == filebytes[54:62]]
     imagedata = bytearray(reversed(filebytes[dataOffset:]))
     bytesperrow = math.ceil(imagesize[0]/8)
     rowPadding = ((4-(bytesperrow%4))%4)
