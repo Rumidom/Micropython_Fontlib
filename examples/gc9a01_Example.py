@@ -20,6 +20,7 @@ fbuf = framebuf.FrameBuffer(bytebuffer, screen_width, screen_height, framebuf.RG
 
 IBM_font = fontlib.font("IBM BIOS (8,8).bmp") # Loads font to ram
 five = fontlib.font("five (5,5).bmp")
+
 color0 = gc9a01.color565((255,255,255))
 color1 = gc9a01.color565((255,0,0))
 fbuf.fill(0)
@@ -28,5 +29,4 @@ fontlib.prt("jumped over the lazy dog",10,90,0,fbuf,IBM_font,invert = False,colo
 # prints text using font
 tft.blit_buffer(bytebuffer,0,0,screen_width,screen_height)
 
-#bytearray(b'\x00\x00\x00\x00\xff\xff\xff\xff')
-#bytearray(b'\xff\xff\xff\xff\x00\x00\x00\xff')
+

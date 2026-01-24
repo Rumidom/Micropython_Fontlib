@@ -44,7 +44,7 @@ img.save('output_1bit.bmp')
 # TODO
 - [x] Load fonts directly from 1bit bitmaps
 - [x] Support for portuguese special characters (ç,á,é,í,ó,ú,â,ê,ô,ã,õ)(Ç,Á,É,Í,Ó,Ú,Â,Ê,Ô,Ã,Õ).
-- [ ] Support for color screens
+- [x] Support for color screens
 
 # Available fonts:
 [futuristic](https://opengameart.org/content/ascii-bitmap-font-futuristic) :\
@@ -62,6 +62,10 @@ five:\
 icons:\
 <img src='./photos/icons.png' width='300'>
 <img src='./fonts/icons (5,7).bmp' width='300'>
+
+[IBM BIOS](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
+<img src='./photos/gc9a01.jpg' width='300'>
+<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>
 
 # LICENSE:
 this project is [MIT licensed](https://github.com/Rumidom/micropython_fontlib/blob/main/LICENSE)
