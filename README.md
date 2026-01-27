@@ -50,26 +50,32 @@ img.save('output_1bit.bmp')
 [futuristic](https://opengameart.org/content/ascii-bitmap-font-futuristic) :\
 <img src='./photos/futuristic.png' width='300'>
 <img src='./fonts/futuristic (5,7).bmp' width='300' >\
+
 five:\
 <img src='./photos/five.png' width='300'>
 <img src='./fonts/five (5,5).bmp' width='300'>\
+
 [oldschool](https://opengameart.org/content/ascii-bitmap-font-oldschool) :\
 <img src='./photos/oldschool.png' width='300'>
 <img src='./fonts/oldschool (5,7).bmp' width='300'>\
+
 [cellphone](https://opengameart.org/content/ascii-bitmap-font-cellphone) :\
 <img src='./photos/cellphone.png' width='300'>
 <img src='./fonts/cellphone (5,7).bmp' width='300'>\
+
 icons:\
 <img src='./photos/icons.png' width='300'>
 <img src='./fonts/icons (5,7).bmp' width='300'>
+
 [IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
 <img src='./photos/IBM%20(8X8).png' width='300'>
 <img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
-120x120 1.28 Inch TFT round Screen
+120x120 1.28 Inch TFT round Screen  
+
 [IBM BIOS 16x16](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
 <img src='./photos/IBM%20(16X16).png' width='300'>
 <img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
-240x240 1.3 Inch TFT Screen
+240x240 1.3 Inch TFT Screen  
 
 # LICENSE:
 this project is [MIT licensed](https://github.com/Rumidom/micropython_fontlib/blob/main/LICENSE)
