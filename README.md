@@ -69,7 +69,7 @@ five:\
 
 icons:\
 <img src='./photos/icons.png' width='300'>
-<img src='./fonts/icons (5,7).bmp' width='300'>
+<img src='./fonts/icons (5,7).bmp' width='300'>  
 84x48 1.5 Inch Nokia 5110 LCD Screen  
 
 [IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
