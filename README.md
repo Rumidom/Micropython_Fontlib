@@ -50,22 +50,27 @@ img.save('output_1bit.bmp')
 [futuristic](https://opengameart.org/content/ascii-bitmap-font-futuristic) :\
 <img src='./photos/futuristic.png' width='300'>
 <img src='./fonts/futuristic (5,7).bmp' width='300' >\
+84x48 1.5 Inch Nokia 5110 LCD Screen  
 
 five:\
 <img src='./photos/five.png' width='300'>
 <img src='./fonts/five (5,5).bmp' width='300'>\
+84x48 1.5 Inch Nokia 5110 LCD Screen  
 
 [oldschool](https://opengameart.org/content/ascii-bitmap-font-oldschool) :\
 <img src='./photos/oldschool.png' width='300'>
 <img src='./fonts/oldschool (5,7).bmp' width='300'>\
+84x48 1.5 Inch Nokia 5110 LCD Screen  
 
 [cellphone](https://opengameart.org/content/ascii-bitmap-font-cellphone) :\
 <img src='./photos/cellphone.png' width='300'>
 <img src='./fonts/cellphone (5,7).bmp' width='300'>\
+84x48 1.5 Inch Nokia 5110 LCD Screen  
 
 icons:\
 <img src='./photos/icons.png' width='300'>
 <img src='./fonts/icons (5,7).bmp' width='300'>
+84x48 1.5 Inch Nokia 5110 LCD Screen  
 
 [IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
 <img src='./photos/IBM%20(8X8).png' width='300'>
