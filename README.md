@@ -62,10 +62,14 @@ five:\
 icons:\
 <img src='./photos/icons.png' width='300'>
 <img src='./fonts/icons (5,7).bmp' width='300'>
-
-[IBM BIOS](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
-<img src='./photos/gc9a01.jpg' width='300'>
-<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>
+[IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
+<img src='./photos/IBM%20(8X8).png' width='300'>
+<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
+120x120 1.28 Inch TFT round Screen
+[IBM BIOS 16x16](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
+<img src='./photos/IBM%20(16X16).png' width='300'>
+<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
+240x240 1.3 Inch TFT Screen
 
 # LICENSE:
 this project is [MIT licensed](https://github.com/Rumidom/micropython_fontlib/blob/main/LICENSE)
