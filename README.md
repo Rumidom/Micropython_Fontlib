@@ -47,40 +47,26 @@ img.save('output_1bit.bmp')
 - [x] Support for color screens
 
 # Available fonts:
-[futuristic](https://opengameart.org/content/ascii-bitmap-font-futuristic) :\
-<img src='./photos/futuristic.png' width='300'>
-<img src='./fonts/futuristic (5,7).bmp' width='300' >\
-84x48 1.5 Inch Nokia 5110 LCD Screen  
+### [Futuristic 5X7](https://opengameart.org/content/ascii-bitmap-font-futuristic) [84x48 1.5 Inch Nokia 5110 LCD Screen]:    
+<img src='./photos/futuristic.png' width='300'><img src='./fonts/futuristic (5,7).bmp' width='300' >  
 
-five:\
-<img src='./photos/five.png' width='300'>
-<img src='./fonts/five (5,5).bmp' width='300'>\
-84x48 1.5 Inch Nokia 5110 LCD Screen  
+### Five 5X5 (Made by the Author) [84x48 1.5 Inch Nokia 5110 LCD Screen]:  
+<img src='./photos/five.png' width='300'><img src='./fonts/five (5,5).bmp' width='300'>  
 
-[oldschool](https://opengameart.org/content/ascii-bitmap-font-oldschool) :\
-<img src='./photos/oldschool.png' width='300'>
-<img src='./fonts/oldschool (5,7).bmp' width='300'>\
-84x48 1.5 Inch Nokia 5110 LCD Screen  
+### [Oldschool 5X7](https://opengameart.org/content/ascii-bitmap-font-oldschool) [84x48 1.5 Inch Nokia 5110 LCD Screen]:    
+<img src='./photos/oldschool.png' width='300'><img src='./fonts/oldschool (5,7).bmp' width='300'>  
 
-[cellphone](https://opengameart.org/content/ascii-bitmap-font-cellphone) :\
-<img src='./photos/cellphone.png' width='300'>
-<img src='./fonts/cellphone (5,7).bmp' width='300'>\
-84x48 1.5 Inch Nokia 5110 LCD Screen  
+### [Cellphone 5X7](https://opengameart.org/content/ascii-bitmap-font-cellphone) [84x48 1.5 Inch Nokia 5110 LCD Screen]:  
+<img src='./photos/cellphone.png' width='300'><img src='./fonts/cellphone (5,7).bmp' width='300'>  
 
-icons:\
-<img src='./photos/icons.png' width='300'>
-<img src='./fonts/icons (5,7).bmp' width='300'>  
-84x48 1.5 Inch Nokia 5110 LCD Screen  
+### Icons 5X7 (Made by the Author) [84x48 1.5 Inch Nokia 5110 LCD Screen]:  
+<img src='./photos/icons.png' width='300'><img src='./fonts/icons (5,7).bmp' width='300'>  
 
-[IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
-<img src='./photos/IBM%20(8X8).png' width='300'>
-<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
-120x120 1.28 Inch TFT round Screen  
+### [IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) [120x120 1.28 Inch TFT round Screen]:    
+<img src='./photos/IBM%20(8X8).png' width='300'><img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
 
-[IBM BIOS 16x16](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
-<img src='./photos/IBM%20(16X16).png' width='300'>
-<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
-240x240 1.3 Inch TFT Screen  
+### [IBM BIOS 16x16](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) [240x240 1.3 Inch TFT Screen]:    
+<img src='./photos/IBM%20(16X16).png' width='300'><img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
 
 # LICENSE:
 this project is [MIT licensed](https://github.com/Rumidom/micropython_fontlib/blob/main/LICENSE)
