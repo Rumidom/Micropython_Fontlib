@@ -24,4 +24,4 @@ fbuf.fill(0)
 fontlib.prt("The Quick Gray",0,0,1,fbuf,FontList[i]) # prints text using font
 fontlib.prt("Fox Jumped Over",0,10,1,fbuf,FontList[i]) # prints text using font
 fontlib.prt("The Lazy Dog",0,20,1,fbuf,FontList[i]) # prints text using font
-oled.show_buffer(buffer)
+oled.show()
