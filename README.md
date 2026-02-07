@@ -1,8 +1,8 @@
 # Micropython Fontlib
-A micropython library for displaying 1bit bitmaps as fonts,and displaying 1bit bitmaps sprites, it was first tested on a monocrome screen (pcd8544 nokia screen)  but you should work with any monocrome screen through [framebuffer](https://docs.micropython.org/en/latest/library/framebuf.html)
+A micropython library for displaying 1-bit bitmap fonts, and 1-bit bitmap sprites, it was first tested on a monocrome screen (pcd8544 nokia screen) but should work with any monocrome screen through [framebuffer](https://docs.micropython.org/en/latest/library/framebuf.html)
 
 # How to use it
-Add fontlib.py and a 1bit font .bmp (should follow the same formatting of the bmp files on the Bitmaps folder) file to your micropython device, then use the library to modify a framebuffer:
+Add fontlib.py and a 1bit font .bmp (Should follow the same formatting of the bmp files on the [fonts](https://github.com/Rumidom/Micropython_Fontlib/tree/main/fonts) folder) file to your micropython device, then use the library to modify a framebuffer:
 ```python
 import framebuf
 import fontlib
@@ -30,8 +30,8 @@ oled.show()
 ```
 see the examples folder on how to use it with diferent displays.
 
-# How create new fonts
-Most image editors should be able to save files to 1bit bmp, I recommend [Paint.net](https://www.getpaint.net/), draw 1 pixel padding around each letters, the file name should include the character size, like the fonts found in the fonts folder. on paint.net if you "save as" and choose bmp it will prompt you with "saving configuration" choose the 1bit option. alternatively you can create the font as a normal bmp file and convert it using [Pillow](https://pypi.org/project/pillow/):
+# How to create new fonts
+Most image editors should have a 1bit bmp option when saving bitmaps, I recommend [Paint.net](https://www.getpaint.net/), draw 1 pixel white padding around each letters, the file name should include the character size, like the fonts found in the [fonts](https://github.com/Rumidom/Micropython_Fontlib/tree/main/fonts) folder. on paint.net if you "save as" and choose bmp it will prompt you with "saving configuration" choose the 1bit option. alternatively you can create the font as a normal bmp file and convert it using [Pillow](https://pypi.org/project/pillow/):
 
 ```python
 from PIL import Image
