@@ -2,6 +2,8 @@
 A micropython library for displaying 1-bit bitmap fonts, and 1-bit bitmap sprites, it was first tested on a monocrome screen (pcd8544 nokia screen) but should work with any monocrome screen through [framebuffer](https://docs.micropython.org/en/latest/library/framebuf.html)
 
 # How to use it
+
+### Using a font
 Add fontlib.py and a 1bit font .bmp (Should follow the same formatting of the bmp files on the [fonts](https://github.com/Rumidom/Micropython_Fontlib/tree/main/fonts) folder) file to your micropython device, then use the library to modify a framebuffer:
 ```python
 import framebuf
@@ -28,7 +30,33 @@ fbuf.fill(0)
 fontlib.prt("The Quick Gray",pos_x,pos_y,spce,fbuf,five) # prints text using font
 oled.show()
 ```
-see the examples folder on how to use it with diferent displays.
+see the [examples](https://github.com/Rumidom/Micropython_Fontlib/tree/main/examples) folder on how to use it with diferent displays.
+
+### Bliting a Sprite
+
+```
+import framebuf
+import fontlib
+import ssd1306
+from machine import Pin,I2C
+
+screen_width = 128
+screen_height = 32
+
+#ESP8266 scl=Pin(4),sda=Pin(5)
+#ESP32 C3 scl=Pin(9),sda=Pin(8)
+i2c = I2C(scl=Pin(9),sda=Pin(8))
+oled = ssd1306.SSD1306_I2C(screen_width, screen_height, i2c)
+
+fbuf = framebuf.FrameBuffer(oled.buffer, screen_width, screen_height, framebuf.MONO_VLSB)
+fbuf.fill(0)
+
+pos_x = 0 # X position on the frame buffer to blit sprite
+pos_y = 0 # Y position on the frame buffer to blit sprite
+drawBitmap('image.bmp',pos_x,pos_y,invert=False,fbuf):
+
+oled.show()
+```
 
 # How to create new fonts
 Most image editors should have a 1bit bmp option when saving bitmaps, I recommend [Paint.net](https://www.getpaint.net/), draw 1 pixel white padding around each letters, the file name should include the character size, like the fonts found in the [fonts](https://github.com/Rumidom/Micropython_Fontlib/tree/main/fonts) folder. on paint.net if you "save as" and choose bmp it will prompt you with "saving configuration" choose the 1bit option. alternatively you can create the font as a normal bmp file and convert it using [Pillow](https://pypi.org/project/pillow/):
