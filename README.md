@@ -1,8 +1,8 @@
 # Micropython Fontlib
-A micropython library for displaying 1bit bitmaps as fonts,and displaying 1bit bitmaps sprites, it was first tested on a monocrome screen (pcd8544 nokia screen)  but you should work with any monocrome screen through [framebuffer](https://docs.micropython.org/en/latest/library/framebuf.html)
+A micropython library for displaying 1-bit bitmap fonts, and 1-bit bitmap sprites, it was first tested on a monocrome screen (pcd8544 nokia screen) but should work with any monocrome screen through [framebuffer](https://docs.micropython.org/en/latest/library/framebuf.html)
 
 # How to use it
-Add fontlib.py and a 1bit font .bmp (should follow the same formatting of the bmp files on the Bitmaps folder) file to your micropython device, then use the library to modify a framebuffer:
+Add fontlib.py and a 1bit font .bmp (Should follow the same formatting of the bmp files on the [fonts](https://github.com/Rumidom/Micropython_Fontlib/tree/main/fonts) folder) file to your micropython device, then use the library to modify a framebuffer:
 ```python
 import framebuf
 import fontlib
@@ -30,8 +30,8 @@ oled.show()
 ```
 see the examples folder on how to use it with diferent displays.
 
-# How create new fonts
-Most image editors should be able to save files to 1bit bmp, I recommend [Paint.net](https://www.getpaint.net/), draw 1 pixel padding around each letters, the file name should include the character size, like the fonts found in the fonts folder. on paint.net if you "save as" and choose bmp it will prompt you with "saving configuration" choose the 1bit option. alternatively you can create the font as a normal bmp file and convert it using [Pillow](https://pypi.org/project/pillow/):
+# How to create new fonts
+Most image editors should have a 1bit bmp option when saving bitmaps, I recommend [Paint.net](https://www.getpaint.net/), draw 1 pixel white padding around each letters, the file name should include the character size, like the fonts found in the [fonts](https://github.com/Rumidom/Micropython_Fontlib/tree/main/fonts) folder. on paint.net if you "save as" and choose bmp it will prompt you with "saving configuration" choose the 1bit option. alternatively you can create the font as a normal bmp file and convert it using [Pillow](https://pypi.org/project/pillow/):
 
 ```python
 from PIL import Image
@@ -47,25 +47,26 @@ img.save('output_1bit.bmp')
 - [x] Support for color screens
 
 # Available fonts:
-[futuristic](https://opengameart.org/content/ascii-bitmap-font-futuristic) :\
-<img src='./photos/futuristic.png' width='300'>
-<img src='./fonts/futuristic (5,7).bmp' width='300' >\
-five:\
-<img src='./photos/five.png' width='300'>
-<img src='./fonts/five (5,5).bmp' width='300'>\
-[oldschool](https://opengameart.org/content/ascii-bitmap-font-oldschool) :\
-<img src='./photos/oldschool.png' width='300'>
-<img src='./fonts/oldschool (5,7).bmp' width='300'>\
-[cellphone](https://opengameart.org/content/ascii-bitmap-font-cellphone) :\
-<img src='./photos/cellphone.png' width='300'>
-<img src='./fonts/cellphone (5,7).bmp' width='300'>\
-icons:\
-<img src='./photos/icons.png' width='300'>
-<img src='./fonts/icons (5,7).bmp' width='300'>
+### [Futuristic 5X7](https://opengameart.org/content/ascii-bitmap-font-futuristic) [84x48 1.5 Inch Nokia 5110 LCD Screen]:    
+<img src='./photos/futuristic.png' width='300'><img src='./fonts/futuristic (5,7).bmp' width='300' >  
 
-[IBM BIOS](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) :\
-<img src='./photos/gc9a01.jpg' width='300'>
-<img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>
+### Five 5X5 (Made by the Author) [84x48 1.5 Inch Nokia 5110 LCD Screen]:  
+<img src='./photos/five.png' width='300'><img src='./fonts/five (5,5).bmp' width='300'>  
+
+### [Oldschool 5X7](https://opengameart.org/content/ascii-bitmap-font-oldschool) [84x48 1.5 Inch Nokia 5110 LCD Screen]:    
+<img src='./photos/oldschool.png' width='300'><img src='./fonts/oldschool (5,7).bmp' width='300'>  
+
+### [Cellphone 5X7](https://opengameart.org/content/ascii-bitmap-font-cellphone) [84x48 1.5 Inch Nokia 5110 LCD Screen]:  
+<img src='./photos/cellphone.png' width='300'><img src='./fonts/cellphone (5,7).bmp' width='300'>  
+
+### Icons 5X7 (Made by the Author) [84x48 1.5 Inch Nokia 5110 LCD Screen]:  
+<img src='./photos/icons.png' width='300'><img src='./fonts/icons (5,7).bmp' width='300'>  
+
+### [IBM BIOS 8x8](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) [120x120 1.28 Inch TFT round Screen]:    
+<img src='./photos/IBM%20(8X8).png' width='300'><img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
+
+### [IBM BIOS 16x16](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_bios) [240x240 1.3 Inch TFT Screen]:    
+<img src='./photos/IBM%20(16X16).png' width='300'><img src='./fonts/IBM%20BIOS%20(8%2C8).bmp' width='300'>  
 
 # LICENSE:
 this project is [MIT licensed](https://github.com/Rumidom/micropython_fontlib/blob/main/LICENSE)
