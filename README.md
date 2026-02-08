@@ -30,7 +30,7 @@ fbuf.fill(0)
 fontlib.prt("The Quick Gray",pos_x,pos_y,spce,fbuf,five) # prints text using font
 oled.show()
 ```
-see the [examples](https://github.com/Rumidom/Micropython_Fontlib/tree/main/examples) folder on how to use it with diferent displays.
+see the [examples folder](https://github.com/Rumidom/Micropython_Fontlib/tree/main/examples) to learn how to use it with diferent displays.
 
 ### Bliting a Sprite
 
