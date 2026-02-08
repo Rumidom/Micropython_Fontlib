@@ -34,7 +34,7 @@ see the [examples](https://github.com/Rumidom/Micropython_Fontlib/tree/main/exam
 
 ### Bliting a Sprite
 
-```
+```python
 import framebuf
 import fontlib
 import ssd1306
