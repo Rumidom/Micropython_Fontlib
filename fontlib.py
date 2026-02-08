@@ -36,7 +36,7 @@ def getbitmap(path):
     imagerows = tuple(imagerows)
     return (imagerows,imagesize,filezise,dataOffset,fmat,bmptag,pallet)
 
-def drawBitmap(path,x,y,fbuf):
+def drawBitmap(path,x,y,invert=False,fbuf):
     bmp_tup = getbitmap(path)
     pallet = bmp_tup[6]
     imagerows = bmp_tup[0]
@@ -50,7 +50,7 @@ def drawBitmap(path,x,y,fbuf):
     for row in imagerows:
         imagedata += row[:-rowPadding]
         
-    DrawPixels(x,y,imagedata,imagesize,fbuf,invert=True)
+    DrawPixels(x,y,imagedata,imagesize,fbuf,invert=invert)
                 
 def getCutTile(imagerows,tilepos,chopsize,imagesize,paddingsize = 1):
     newchopsize = (chopsize[0]+paddingsize*2,chopsize[1]+paddingsize*2)
