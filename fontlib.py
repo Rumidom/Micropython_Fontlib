@@ -163,5 +163,5 @@ def prt(string,xpos,ypos,spce,fbuf,font,invert=False,color = None):
         printchar(c,xpos,ypos,fbuf,font = font,invert=invert,charwidth=char_size[0],fill=fill)
         xpos+=(spce+char_size[0])
         if (invert and i < len(string)-1):
-            fbuf.rect(xpos-spce, ypos, spce, string_height, color,fill)
+            fbuf.rect(xpos-spce, ypos, spce, string_height,fill)
 
