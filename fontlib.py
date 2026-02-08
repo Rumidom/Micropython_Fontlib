@@ -36,7 +36,7 @@ def getbitmap(path):
     imagerows = tuple(imagerows)
     return (imagerows,imagesize,filezise,dataOffset,fmat,bmptag,pallet)
 
-def drawBitmap(path,x,y,invert=False,fbuf):
+def drawBitmap(path,x,y,fbuf,invert=False):
     bmp_tup = getbitmap(path)
     pallet = bmp_tup[6]
     imagerows = bmp_tup[0]
