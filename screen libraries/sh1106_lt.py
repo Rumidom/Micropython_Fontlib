@@ -27,6 +27,7 @@
 #
 # This is a simplified 'Lite' version of the library found here:
 # https://github.com/robert-hh/SH1106/blob/master/sh1106.py
+# double buffering ?! aint nobody got ram for that
 
 from micropython import const
 import utime as time
@@ -112,14 +113,6 @@ class SH1106(framebuf.FrameBuffer):
                 self.write_cmd(_HIGH_COLUMN_ADDRESS | 0)
                 self.write_data(self.buffer[(self.width*page):(self.width*page+self.width)])
 
-    def pixel(self, x, y, color=None):
-        if color is None:
-            return super().pixel(x, y)
-        else:
-            super().pixel(x, y , color)
-            page = y // 8
-            self.pages_to_update |= 1 << page
-
     def fill(self, color):
         super().fill(color)
         self.pages_to_update = (1 << self.pages) - 1
@@ -151,13 +144,19 @@ class SH1106_I2C(SH1106):
         super().__init__(width, height, external_vcc, flip=flip)
 
     def write_cmd(self, cmd):
-        self.temp[0] = 0x80  # Co=1, D/C#=0
-        self.temp[1] = cmd
-        self.i2c.writeto(self.addr, self.temp)
-
+        try:
+            self.temp[0] = 0x80  # Co=1, D/C#=0
+            self.temp[1] = cmd
+            self.i2c.writeto(self.addr, self.temp)
+        except Exception as e:
+            print(e)
+        
     def write_data(self, buf):
-        self.i2c.writeto(self.addr, b'\x40'+buf)
-
+        try:
+            self.i2c.writeto(self.addr, b'\x40'+buf)
+        except Exception as e:
+            print(e)
+        
     def reset(self,res=None):
         super().reset(self.res)
 
