@@ -113,14 +113,6 @@ class SH1106(framebuf.FrameBuffer):
                 self.write_cmd(_HIGH_COLUMN_ADDRESS | 0)
                 self.write_data(self.buffer[(self.width*page):(self.width*page+self.width)])
 
-    def fill(self, color):
-        super().fill(color)
-        self.pages_to_update = (1 << self.pages) - 1
-
-    def blit(self, fbuf, x, y, key=-1, palette=None):
-        super().blit(fbuf, x, y, key, palette)
-        self.register_updates(y, y+self.height)
-
     def reset(self, res=None):
         if res is not None:
             res(1)
